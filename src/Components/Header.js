@@ -5,7 +5,8 @@ import CartButton from './uI/cartButton'
 const Header=(props)=>{
     return <Fragment>
     <header className={Classes.header}>
-        <h2>VIRALI VARI VINDHU</h2>
+        <h2> V V V </h2>
+        <h2>virali vari vindhu</h2>
         <CartButton onclick={props.cartHandler}/>
     </header>
     <div className={Classes.Image} >
