@@ -1,27 +1,8 @@
-.meal {
-  position: relative;
-  margin: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #ccc;
-}
+.meal { display: flex; flex-direction: column; position: relative; margin: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #ccc; }
 
-.form-container {
-  right: 0;
-  top:0;
-}
+@media (min-width: 768px) { .meal { flex-direction: row; align-items: center; justify-content: space-between; } }
 
-  
-  .meal h3 {
-    margin: 0 0 0.25rem 0;
-  }
-  
-  .description {
-    font-style: italic;
-  }
-  
-  .price {
-    margin-top: 0.25rem;
-    font-weight: bold;
-    color: #ad5502;
-    font-size: 1.25rem;
-  }
+.form-container { position: absolute; right: 0; top:0; margin: 0.5rem; padding: 0.5rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+.description { font-style: italic; }
+
+.price { margin-top: 0.25rem; font-weight: bold; color: #ad5502; font-size: 1.25rem; }
