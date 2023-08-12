@@ -10,47 +10,35 @@
 
 .modal {
   position: fixed;
-  top: calc(50% - (70vh / 2)); /* Center the modal vertically */
+  top: 15vh;
   left: calc(50% - (90% / 2)); /* Center the modal horizontally */
   width: 90%;
   max-height: 70vh; /* Set a maximum height for the modal */
   overflow: auto;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 14px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.25);
+  z-index: 30;
   
-/* Change the background color of the modal */
-background-color:#1c2331;
-
-/* Change the color of the text in the modal */
-color:#fff;
-
-/* Add more padding to the modal */
-padding:2rem;
-
-/* Change the border radius of the modal */
-border-radius:20px;
-
-/* Change the box shadow of the modal */
-box-shadow:0px 4px 16px rgba(0,0,0,0.5);
-
-z-index:30;
-
 /* Add a transition to the modal */
-transition:all .3s ease-out;
+transition: all .3s ease-out;
 
 /* Add a transform to the modal */
-transform:translateY(-3rem);
+transform: translateY(-3rem);
 opacity:0;
 
 /* Add an animation to the modal */
-animation-name:slide-down;
-animation-duration:.3s;
-animation-timing-function:ease-out;
-animation-fill-mode:forwards;
+animation-name: slide-down;
+animation-duration: .3s;
+animation-timing-function: ease-out;
+animation-fill-mode: forwards;
 }
 
 @media (min-width:768px) {
 .modal {
-    width:60rem; /* Increase the width of the modal on larger screens */
-    left:calc(50% - (60rem /2));
+    width:40rem;
+    left:calc(50% - (40rem /2));
 }
 }
 
